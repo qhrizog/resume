@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chris O. N. - Curriculum Vitae</title>
+
+<%= csrf_meta_tags %>
+<%= csp_meta_tag %>
+
+<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+<%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+<meta name="viewport" content="width=device-width"/>
+<meta name="description" content="The Curriculum Vitae of Joe Bloggs."/>
+<meta charset="UTF-8"> 
+
+<link type="text/css" rel="stylesheet" href="style.css">
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body id="top">
+<div id="cv" class="instaFade">
+	<div class="mainDetails">
+		<div id="headshot" class="quickFade">
+			<%= image_tag('headshot.png', alt: 'Chris O N') %>
+		</div>
+		
+		<div id="name">
+			<h1 class="quickFade delayTwo">Chris O. N.</h1>
+			<h2 class="quickFade delayThree">Full-stack Developer</h2>
+		</div>
+		
+		<div id="contactDetails" class="quickFade delayFour">
+			<ul>
+				<li><a href="mailto:con@eserve.com.ng" target="_blank">con@eserve.com.ng</a></li>
+				<li><a href="http://www.eserve.com.ng/">www.eserve.com.ng</a></li>
+				<li>(234) 8034-255-330</li>
+				<li><%= link_to('Sample Human Resource App.',home_ehrstart_path) %></li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+	<div id="mainArea" class="quickFade delayFive">
+		<section>
+			<article>
+				<div class="sectionTitle">
+					<h1>Personal Profile</h1>
+				</div>
+				
+				<div class="sectionContent">
+					<p>I am a web developer with a vast array of knowledge in many different front end and back end languages, responsive frameworks, databases, and best code practices. My objective is simply to be the best web developer that I can be and to contribute to the technology industry all that I know and can do. I am dedicated to perfecting my craft by learning from more seasoned developers, remaining humble, and continuously making strides to learn all that I can about development. While a student at both Georgia Southern and Georgia State Universities, I studied Mathematics, and I believe that my understanding of problem solving and complex algorithms are also skills that have and will continue to contribute to my overall success as a developer.</p>
+				</div>
+			</article>
+			<div class="clear"></div>
+		</section>
+		
+		
+		<section>
+			<div class="sectionTitle">
+				<h1>Work Experience</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<article>
+					<h2>Full Stack Web Developer</h2>
+					<p class="subDetails">The Home Depot, Atlanta, GA</p>
+					<p class="subDetails">August 2012 - Present</p>
+					<p>As a web developer at THD, I was a member of a team that constructed both the customer-facing and administrative sites for their weekend workshops. I was responsible for both front and back end development. We used a collection of technologies for our underlying structures as the two projects were built differently. There, my knowledge of Java, HTML, CSS, and Javascript expanded, while I gained experience using some of the best modern front-end frameworks such as Bootstrap and Angular; NoSQL databases, Cassandra and MongoDB; Node.js, NPM, Gulp and Grunt. As a team, we practiced an XP methodology, that included TDD (test driven development), paired programming, and Agile. As a member of this team, I also gained some experience in automation testing with Selenium in Javascript.</p><ul><li>Java and JUnit tests</li></ul><ul><li>XP programming (test-driven development, paired programming, Agile)</li><li>NoSQL (Cassandra)</li><li>CSS Preprocessers (.scss)</li><li>Javascript Unit Testing (Jasmine, Karma, Mocha)<br></li></ul><p></p>
+				</article>
+				
+				<article>
+					<h2>Java/Android Apprentice & Web Developer</h2>
+					<p class="subDetails">Ingine Studio, LLC</p>
+					<p class="subDetails">October 2006 - November 2009</p>
+					<p>As an Android apprentice, I started out with a refresher course in Java and a review of object-oriented programming. While serving under a full-time Lead Android Developer, I was able to see the implementation of classes, the efficiency of inheritance and polymorphism, and best OO practices first hand. The intricacies revolving around application development has introduced me to the importance of modularized development. I am also a freelance Web Developer with Ingine and have assisted in the development of the company's portfolio web application which hasn't yet been released.</p><ul><li>Java (classes, polymorphism, inheritance)</li><li>Agile / Jira (Sprint & Task Management)</li><li>Git</li><li>Android</li><li>Front & Back End Development (HTML, CSS, Javascript, Jquery (animations), Node, Angular, MongoDB, Gulp, Bootstrap)</li><li>Javascript Unit Testing (Karma, Jasmine)</li></ul><p></p>
+				</article>
+
+				<article>
+					<h2>Payroll Programmer & Web Developer</h2>
+					<p class="subDetails">Corporate Payroll Services</p>
+					<p class="subDetails">January 2010 - July 2012</p>
+					<p>My duties at Corporate Payroll Services included maintaining and updating the payroll software and GUI interface for their Employee Portal, which allowed employees access to their own payroll and personal information and reports. My understanding of mathematical algorithms and logical structure afforded me the opportunity to work for this small payroll company and serve as their primary web developer. As such, I was responsible for website updates, fixes, and new items to be placed on the website through the usage of Javascript, PHP, MySQL, HTML & Css, and served as the full-stack developer.</p><p>My accomplishments include new layout design for the staff portal connected to their website, as well as the creation of responsive designs to enhance their website. I also also did some SEO work and made both the script and design code run more efficiently. I was also responsible for monitoring website issues and traffic by using Google Analytics. On the payroll side, I was responsible for the development of many of their new GUI interfaces and report systems.</p><ul><li>Updating existing site with more modern designs and techniques</li><li>Increasing website performance using SEO best practices</li><li>Incorporating responsive web techniques through the usage of Javascript, JS frameworks, and CSS</li><li>Windows OS Command Line</li><li>Google Analytics</li></ul><p></p>
+				</article>
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+		
+		<section>
+			<div class="sectionTitle">
+				<h1>Core Technologies</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<ul class="keySkills">
+					<li>JavaScript
+					<li>CSS
+					<li>HTML
+					<li>React
+					<li>Redux
+					<li>Mongo
+					<li>Deployment</li>
+					<li>Microservices</li>
+					<li>Git/Bitbucket</li>
+					<li>RoR, Ruby</li>
+					<li>Docker, Kubernetes</li>
+					<li>Agile Scrum, Kanban, TDD,CI/CD, Pair Programming, Code Review, Jenkins.</li>
+					<li>AOP, IoC, REST API, SOAP, JSON</li>
+					<li>Symfony, CakePHP, Laravel, MongoDB, Cassandra, MySQL, Oracle PL/SQL</li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+		
+		<section>
+			<div class="sectionTitle">
+				<h1>Education</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<article>
+					<h2>High School Diploma</h2>
+					<p class="subDetails">Pontiac Central High School, Pontiac, MI</p>
+					<ul><li>Top 1% of class<br></li><li>National Honors Society / Distinguished Honor Student</li><li>President of Entrepreneurship Club (2007)</li></ul>
+				</article>
+				<p></p>
+				<article>
+					<h2>B.Sc.: Mathematics / Computer Science</h2>
+					<p class="subDetails">Georgia Southern University, Statesbor, GA, MI</p>
+					<ul><li>Top 1% of class<br></li><li>National Honors Society / Distinguished Honor Student</li><li>President of Entrepreneurship Club (2007)</li></ul>
+				</article>
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+	</div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3753241-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>
